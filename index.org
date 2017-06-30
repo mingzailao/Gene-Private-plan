@@ -12,10 +12,12 @@
 
 * TODO Feature selection
 
-** Model based method
+** TODO Model based method
 1. Random Forest
 2. Linear SVM
-3. Sparse PCA
+3. Sparse PCA(TODO)
 ** TODO t检验
-* 
+** TODO Repeat the experiment to build the gene pool
+* TODO Select the feature to clustering 
+
 
