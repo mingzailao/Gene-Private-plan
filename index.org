@@ -1,0 +1,21 @@
+#+TITLE:     Plan For Gene
+#+AUTHOR:    mingzailao
+#+EMAIL:     mingzailao@126.com
+#+DATE:      
+#+TAGS:      
+#+LAYOUT:    
+#+CATEGORIES: 
+
+
+* DONE Read the Dataset
+  CLOSED: [2017-06-30 Fri 21:20]
+
+* TODO Feature selection
+
+** Model based method
+1. Random Forest
+2. Linear SVM
+3. Sparse PCA
+** TODO t检验
+* 
+
