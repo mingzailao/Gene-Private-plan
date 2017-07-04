@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2017-06-30 Fri 21:30 -->
+<!-- 2017-07-04 Tue 19:02 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Plan For Gene</title>
@@ -233,53 +233,155 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org2528a7e">1. <span class="done DONE">DONE</span> Read the Dataset</a></li>
-<li><a href="#org3d5d4b0">2. <span class="todo TODO">TODO</span> Feature selection</a>
+<li><a href="#orgcd0ac08">1. <span class="done DONE">DONE</span> Read the Dataset</a>
 <ul>
-<li><a href="#org7aef99e">2.1. <span class="todo TODO">TODO</span> Model based method</a></li>
-<li><a href="#org88b871b">2.2. <span class="todo TODO">TODO</span> t检验</a></li>
-<li><a href="#org5f021d5">2.3. <span class="todo TODO">TODO</span> Repeat the experiment to build the gene pool</a></li>
+<li><a href="#org7f97e52">1.1. <span class="done DONE">DONE</span> deal with the file (target file)</a></li>
+<li><a href="#orgb8d79fd">1.2. <span class="done DONE">DONE</span> Deal with the gene data (ctla4 people)</a></li>
+<li><a href="#orgfbe8bbe">1.3. <span class="done DONE">DONE</span> Deal with the gene data (pd1 people)</a></li>
+<li><a href="#orgef04512">1.4. <span class="done DONE">DONE</span> save data</a></li>
 </ul>
 </li>
-<li><a href="#org371c498">3. <span class="todo TODO">TODO</span> Select the feature to clustering</a></li>
+<li><a href="#org7a83568">2. <span class="done DONE">DONE</span> Feature selection(reducing the dimension)</a>
+<ul>
+<li><a href="#org2413792">2.1. <span class="done DONE">DONE</span> Model based method</a></li>
+<li><a href="#orgbf5a018">2.2. <span class="done DONE">DONE</span> t检验</a></li>
+<li><a href="#org6889bc4">2.3. <span class="done DONE">DONE</span> Repeat the experiment to build the gene pool</a></li>
+</ul>
+</li>
+<li><a href="#org4f23942">3. <span class="done DONE">DONE</span> Rethink the experiment</a></li>
+<li><a href="#org1cec482">4. <span class="todo TODO">TODO</span> Select the feature to clustering</a>
+<ul>
+<li><a href="#orgeacb416">4.1. Use the feature selected to do the clustering work</a>
+<ul>
+<li><a href="#org8ee2993">4.1.1. Kmeans for clustering</a></li>
+<li><a href="#org5fac51a">4.1.2. Spectral Clustering</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </div>
 </div>
 
 
-<div id="outline-container-org2528a7e" class="outline-2">
-<h2 id="org2528a7e"><span class="section-number-2">1</span> <span class="done DONE">DONE</span> Read the Dataset</h2>
+<div id="outline-container-orgcd0ac08" class="outline-2">
+<h2 id="orgcd0ac08"><span class="section-number-2">1</span> <span class="done DONE">DONE</span> Read the Dataset</h2>
 <div class="outline-text-2" id="text-1">
-</div>
+<p>
+Read the dataset, read the dataset as the dataframe in pandas.
+</p>
 </div>
 
-<div id="outline-container-org3d5d4b0" class="outline-2">
-<h2 id="org3d5d4b0"><span class="section-number-2">2</span> <span class="todo TODO">TODO</span> Feature selection</h2>
+<div id="outline-container-org7f97e52" class="outline-3">
+<h3 id="org7f97e52"><span class="section-number-3">1.1</span> <span class="done DONE">DONE</span> deal with the file (target file)</h3>
+<div class="outline-text-3" id="text-1-1">
+</div>
+</div>
+<div id="outline-container-orgb8d79fd" class="outline-3">
+<h3 id="orgb8d79fd"><span class="section-number-3">1.2</span> <span class="done DONE">DONE</span> Deal with the gene data (ctla4 people)</h3>
+<div class="outline-text-3" id="text-1-2">
+<ul class="org-ul">
+<li>duplicate the colomns</li>
+<li>delete the gene data which with no target</li>
+<li>add the target information to the gene data</li>
+<li>delete the gene data which is all NaN</li>
+<li>count zeros</li>
+<li>delete the no information target instance</li>
+<li>Long survival as yes</li>
+</ul>
+<p>
+CLOSED: <span class="timestamp-wrapper"><span class="timestamp">[2017-07-04 Tue 15:56]</span></span>
+</p>
+</div>
+</div>
+<div id="outline-container-orgfbe8bbe" class="outline-3">
+<h3 id="orgfbe8bbe"><span class="section-number-3">1.3</span> <span class="done DONE">DONE</span> Deal with the gene data (pd1 people)</h3>
+<div class="outline-text-3" id="text-1-3">
+<ul class="org-ul">
+<li>duplicate the colomns</li>
+<li>delete the gene data which with no target</li>
+<li>add the target information to the gene data</li>
+<li>delete the gene data which is all NaN</li>
+<li>count zeros</li>
+<li>delete the no information target instance</li>
+<li>Long survival as yes</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgef04512" class="outline-3">
+<h3 id="orgef04512"><span class="section-number-3">1.4</span> <span class="done DONE">DONE</span> save data</h3>
+<div class="outline-text-3" id="text-1-4">
+</div>
+</div>
+</div>
+<div id="outline-container-org7a83568" class="outline-2">
+<h2 id="org7a83568"><span class="section-number-2">2</span> <span class="done DONE">DONE</span> Feature selection(reducing the dimension)</h2>
 <div class="outline-text-2" id="text-2">
-</div><div id="outline-container-org7aef99e" class="outline-3">
-<h3 id="org7aef99e"><span class="section-number-3">2.1</span> <span class="todo TODO">TODO</span> Model based method</h3>
+</div>
+<div id="outline-container-org2413792" class="outline-3">
+<h3 id="org2413792"><span class="section-number-3">2.1</span> <span class="done DONE">DONE</span> Model based method</h3>
 <div class="outline-text-3" id="text-2-1">
+</div>
+<ol class="org-ol"><li><a id="org55f4bba"></a><span class="done DONE">DONE</span> Random Forest<br  /><div class="outline-text-5" id="text-2-1-0-1">
+</div></li>
+<li><a id="orgf755871"></a><span class="done DONE">DONE</span> Linear SVM<br  /><div class="outline-text-5" id="text-2-1-0-2">
+</div></li>
+<li><a id="org90a4e23"></a><span class="todo TODO">TODO</span> Sparse PCA<br  /></li></ol>
+</div>
+<div id="outline-container-orgbf5a018" class="outline-3">
+<h3 id="orgbf5a018"><span class="section-number-3">2.2</span> <span class="done DONE">DONE</span> t检验</h3>
+<div class="outline-text-3" id="text-2-2">
+</div>
+</div>
+<div id="outline-container-org6889bc4" class="outline-3">
+<h3 id="org6889bc4"><span class="section-number-3">2.3</span> <span class="done DONE">DONE</span> Repeat the experiment to build the gene pool</h3>
+<div class="outline-text-3" id="text-2-3">
+</div>
+</div>
+</div>
+<div id="outline-container-org4f23942" class="outline-2">
+<h2 id="org4f23942"><span class="section-number-2">3</span> <span class="done DONE">DONE</span> Rethink the experiment</h2>
+<div class="outline-text-2" id="text-3">
 <ol class="org-ol">
-<li>Random Forest</li>
-<li>Linear SVM</li>
-<li>Sparse PCA(TODO)</li>
+<li>Use t-test to select the gene features.</li>
+<li>Scaling the  dataset.</li>
+<li>After 1) step, build a model A1  to test the classifier's performance.</li>
+<li>After t-test, use the model based method to select less features.</li>
+<li>After 3) step, build a model A2 with the same parameters and test the classifier's performance again.</li>
+<li>If A2 has better performance than A1, then we can think that the features we picked is good than A1.</li>
+<li>Repeat the 3-5) step.</li>
 </ol>
 </div>
 </div>
-<div id="outline-container-org88b871b" class="outline-3">
-<h3 id="org88b871b"><span class="section-number-3">2.2</span> <span class="todo TODO">TODO</span> t检验</h3>
+<div id="outline-container-org1cec482" class="outline-2">
+<h2 id="org1cec482"><span class="section-number-2">4</span> <span class="todo TODO">TODO</span> Select the feature to clustering</h2>
+<div class="outline-text-2" id="text-4">
+</div><div id="outline-container-orgeacb416" class="outline-3">
+<h3 id="orgeacb416"><span class="section-number-3">4.1</span> Use the feature selected to do the clustering work</h3>
+<div class="outline-text-3" id="text-4-1">
+</div><div id="outline-container-org8ee2993" class="outline-4">
+<h4 id="org8ee2993"><span class="section-number-4">4.1.1</span> Kmeans for clustering</h4>
+<div class="outline-text-4" id="text-4-1-1">
+</div><ol class="org-ol"><li><a id="org1514953"></a>4 clusters<br  /><div class="outline-text-5" id="text-4-1-1-1">
+<ul class="org-ul">
+<li>positive instance that use ctla4.</li>
+<li>negtive instance that use ctla4.</li>
+<li>positive instance that use pd1.</li>
+<li>negtive instance that use pd1.</li>
+</ul>
+</div></li></ol>
 </div>
-<div id="outline-container-org5f021d5" class="outline-3">
-<h3 id="org5f021d5"><span class="section-number-3">2.3</span> <span class="todo TODO">TODO</span> Repeat the experiment to build the gene pool</h3>
+
+<div id="outline-container-org5fac51a" class="outline-4">
+<h4 id="org5fac51a"><span class="section-number-4">4.1.2</span> Spectral Clustering</h4>
 </div>
 </div>
-<div id="outline-container-org371c498" class="outline-2">
-<h2 id="org371c498"><span class="section-number-2">3</span> <span class="todo TODO">TODO</span> Select the feature to clustering</h2>
 </div>
 </div>
 <div id="postamble" class="status">
+<p class="date">Date: 2017-07-04 Tue 00:00</p>
 <p class="author">Author: mingzailao</p>
-<p class="date">Created: 2017-06-30 Fri 21:30</p>
+<p class="date">Created: 2017-07-04 Tue 19:02</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
