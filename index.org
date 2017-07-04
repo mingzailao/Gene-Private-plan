@@ -55,12 +55,12 @@ Read the dataset, read the dataset as the dataframe in pandas.
  6. If A2 has better performance than A1, then we can think that the features we picked is good than A1.
  7. Repeat the 3-5) step. 
 * TODO Select the feature to clustering 
-** Use the feature selected to do the clustering work
-*** Kmeans for clustering
+** TODO Use the feature selected to do the clustering work
+*** TODO Kmeans for clustering
 **** 4 clusters
      - positive instance that use ctla4.
      - negtive instance that use ctla4.
      - positive instance that use pd1.
      - negtive instance that use pd1.
 
-*** Spectral Clustering
+*** TODO Spectral Clustering
