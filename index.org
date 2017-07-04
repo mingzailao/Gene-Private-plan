@@ -37,26 +37,23 @@ Read the dataset, read the dataset as the dataframe in pandas.
    CLOSED: [2017-07-04 Tue 15:56]
 * DONE Feature selection(reducing the dimension)
   CLOSED: [2017-07-04 Tue 19:00]
-** DONE Model based method
-   CLOSED: [2017-07-04 Tue 15:56]
+** DONE t检验
+   CLOSED: [2017-07-04 Tue 19:34]
+** TODO Model based method
 **** DONE Random Forest
      CLOSED: [2017-07-04 Tue 15:56]
 **** DONE Linear SVM
      CLOSED: [2017-07-04 Tue 15:57]
 **** TODO Sparse PCA
-** DONE t检验
-   CLOSED: [2017-07-04 Tue 19:00]
-** DONE Repeat the experiment to build the gene pool
-   CLOSED: [2017-07-04 Tue 19:00]
-* DONE Rethink the experiment
-  CLOSED: [2017-07-04 Tue 19:00]
-1. Use t-test to select the gene features.
-2. Scaling the  dataset. 
-3. After 1) step, build a model A1  to test the classifier's performance.
-4. After t-test, use the model based method to select less features.
-5. After 3) step, build a model A2 with the same parameters and test the classifier's performance again.
-6. If A2 has better performance than A1, then we can think that the features we picked is good than A1.
-7. Repeat the 3-5) step. 
+** TODO Repeat the experiment to build the gene pool
+** TODO workflow
+ 1. Use t-test to select the gene features.
+ 2. Scaling the  dataset. 
+ 3. After 1) step, build a model A1  to test the classifier's performance.
+ 4. After t-test, use the model based method to select less features.
+ 5. After 3) step, build a model A2 with the same parameters and test the classifier's performance again.
+ 6. If A2 has better performance than A1, then we can think that the features we picked is good than A1.
+ 7. Repeat the 3-5) step. 
 * TODO Select the feature to clustering 
 ** Use the feature selected to do the clustering work
 *** Kmeans for clustering
